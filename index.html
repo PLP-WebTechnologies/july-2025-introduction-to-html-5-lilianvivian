@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="description" content="A basic HTML5 document structure" />
+     <meta name="author" content="Lilan Vivian" />
+     <title>Welcome | HTML5 + Accessibility & SEO Basics</title>
+    </head>
+
+<body>
+    <header>
+        <h1>My Accessible & SEO-Friendly Web Page</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about" title="Learn more about me">About</a></li>
+                <li><a href="#services" title="Learn about my services">Services</a></li>
+                <li><a href="#contact" title="Get in touch with me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>
+                Hello! My name is Lilian Vivian Wambui. I am a web developer with a passion for creating accessible and user-friendly websites. This is a basic HTML5 document structure that includes accessibility and SEO best practices.
+            </p>
+        </section>
+
+        <section id="services" aria-labelledby="services-heading">
+            <h2 id="services-heading">My Services</h2>
+            <p>Here are some things one should focus on to grow their web development skills:</p>
+            <ul>
+                <li>Create semantically correct HTML pages</li>
+                <li>Design accessible web structures</li>
+                <li>Apply beginner SEO techniques</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+            <p>Feel free to reach out through the form below.</p>
+            <form action="https://formspree.io/f/xnnzvlvq" method="POST" aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" size="40" required aria-required="true" /><br/>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" size="40" required aria-required="true" /><br/>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" cols="40" rows="5" required aria-required="true"></textarea><br/>
+
+                <input type="hidden" name="_subject" value="New form submission" />
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lilian Vivian. Built for the July 2025 HTML5 Assignment.</p>
+    </footer>
+</body>
+</html>
+  
+    
+
